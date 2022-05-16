@@ -15,5 +15,5 @@ Embed code
 ```
 Iframe link paste 
 ```
-<iframe src = 'https://10az.online.tableau.com/t/anyachandorkarportfolio/views/Deloitte_Geo_Analysis/StateMap/6be985df-18c3-4a2c-ad0c-f685f7ac4e29/ca76a61d-7d6e-4f46-991a-9b5cbbac681b?:display_count=n&:showVizHome=n&:origin=viz_share_link' width=650 height=450></iframe>
+<iframe src = 'https://10az.online.tableau.com/t/anyachandorkarportfolio/views/Deloitte_Geo_Analysis/StateMap/9967c08e-6ff1-4fad-85b3-bf20079c7ae7/CustomStateView?:showAppBanner=false&:display_count=n&:showVizHome=n&:origin=viz_share_link' width=650 height=450></iframe>
 
