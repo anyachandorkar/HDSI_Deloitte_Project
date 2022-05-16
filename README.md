@@ -9,7 +9,11 @@
 ```
 Embed code
 ```
-<script type='text/javascript' src='https://10az.online.tableau.com/javascripts/api/viz_v1.js'></script><div class='tableauPlaceholder' style='width: 1440px; height: 674px;'><object class='tableauViz' width='1440' height='674' style='display:none;'><param name='host_url' value='https%3A%2F%2F10az.online.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='&#47;t&#47;anyachandorkarportfolio' /><param name='name' value='Deloitte_Geo_Analysis&#47;StateMap&#47;9967c08e-6ff1-4fad-85b3-bf20079c7ae7&#47;CustomStateView' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='showAppBanner' value='false' /></object></div>
+<script type="module" src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js"></script>
+<tableau-viz id="tableauViz"       
+  src='https://10az.online.tableau.com/t/anyachandorkarportfolio/views/Deloitte_Geo_Analysis/StateMap/9967c08e-6ff1-4fad-85b3-bf20079c7ae7/CustomStateView?:showAppBanner=false&:display_count=n&:showVizHome=n&:origin=viz_share_link'      
+  height='600px' width='600px' toolbar='bottom' hide-tabs>
+</tableau-viz>
 
 
 ```
