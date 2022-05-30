@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <head>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -9,31 +10,43 @@
     <hr />
     <div class="row mt-3 m-auto container border border-primary rounded-5">
         <h3 class="mt-2">Regions</h3>
-        <iframe src='https://public.tableau.com/views/regionaltimeseries/Regional?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link&:showVizHome=no' width=600 height=500 frameBorder=1></iframe>
+        <iframe
+            src='https://public.tableau.com/views/regionaltimeseries/Regional?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link&:showVizHome=no'
+            width=600 height=500 frameBorder=1></iframe>
         <p class="col-12 mb-2">
-            In general you can see that all 4 regions had similar trends in job performance across the months from 
-            March 2020-September 2021 and no one region was going significantly better than the other. There is a overall increasing, positive trend
-            across regions with the exception of a dip in December 2020 and some variation in August 2021. 
+            In general you can see that all 4 regions had similar trends in job performance across the months from
+            March 2020-September 2021 and no one region was going significantly better than the other. There is a
+            overall increasing, positive trend
+            across regions with the exception of a dip in December 2020 and some variation in August 2021.
             <br>
         </p>
         <div class="col-12 mb-2">
             <h5>The Dip in December 2020</h5>
-            From the line graph you can see that all regions simultaneously had a dip around December 2020. The economy 
-            added 199,000 jobs in December which was less than half of what economists expected and the smallest number in that year.
-            This was due to new cases of COVID-19 which skyrocketed to record highs, making December the deadliest, most infectious month 
-            of 2020. Due to this reason, the # of jobs available would decrease as there would be businesses closing again especially
-            in hospitality and retail industries. 
+            From the line graph you can see that all regions simultaneously had a dip around December 2020. The economy
+            added 199,000 jobs in December which was less than half of what economists expected and the smallest number
+            in that year.
+            This was due to new cases of COVID-19 which skyrocketed to record highs, making December the deadliest, most
+            infectious month
+            of 2020. Due to this reason, the # of jobs available would decrease as there would be businesses closing
+            again especially
+            in hospitality and retail industries.
             <br>
 
 
             <h5>Fluctuation in August 2021</h5>
-            Despite the overall positive trend, we see a steep increase in jobs available around June 2021 and then around August 2021, the regions
-            diverge in different directions, with the Midwest continuing to steeply increase, West and South stablizing, and Northeast steeply 
-            decreasing. After reopening many businesses in the summer of 2021, the South and Midwest regions borne the brunt of the 
-            summer wave of coronavirus infections. In these regions vaccination rates were low and states like Texas and Florida banned mask mandates.
-            As a result, the number of Americans voluntarily quitting their jobs surged to a record high in August with more than 10 million vacancies
-            especially in those regions. Following the same logic, many Northeastern states continued having their pandemic policies in place and thus
-            didn't see many openings in jobs compared to other regions. 
+            Despite the overall positive trend, we see a steep increase in jobs available around June 2021 and then
+            around August 2021, the regions
+            diverge in different directions, with the Midwest continuing to steeply increase, West and South stablizing,
+            and Northeast steeply
+            decreasing. After reopening many businesses in the summer of 2021, the South and Midwest regions borne the
+            brunt of the
+            summer wave of coronavirus infections. In these regions vaccination rates were low and states like Texas and
+            Florida banned mask mandates.
+            As a result, the number of Americans voluntarily quitting their jobs surged to a record high in August with
+            more than 10 million vacancies
+            especially in those regions. Following the same logic, many Northeastern states continued having their
+            pandemic policies in place and thus
+            didn't see many openings in jobs compared to other regions.
             <br>
 
         </div>
@@ -41,25 +54,27 @@
     <div class="row mt-3 m-auto container border border-primary rounded-5">
         <h3 class="mt-2">Forecasting Model</h3>
         <p class="col-12 mb-2">
-            Our next step after assessing trends over time, was to create a model that could predict job performance for the remaining 3 months of 2021.
-            We tested 4 different models: Prophet, ARIMA, SES, and Holt Linear to see which one would result in the best train/test error proportion. 
+            Our next step after assessing trends over time, was to create a model that could predict job performance for
+            the remaining 3 months of 2021.
+            We tested 4 different models: Prophet, ARIMA, SES, and Holt Linear to see which one would result in the best
+            train/test error proportion.
         </p>
         <br>
         <div class="col-12 mb-2">
-            <iframe src='Anya_Visualizations/arima_model.html' width=600 height=500 frameBorder=1></iframe>
+            <iframe src='Anya_Visualizations/arima_model.html' width=600 frameBorder=1></iframe>
             <p> Autoregressive Integrated Moving Average Model </p>
-            <iframe src='Anya_Visualizations/ses_model.html' width=600 height=500 frameBorder=1></iframe>
+            <img src='Anya_Visualizations/ses_model.html' width=600 frameBorder=1>
             <p> Single Exponential Smoothing Model </p>
-            <iframe src='Anya_Visualizations/holt_linear_model.html' width=600 height=500 frameBorder=1></iframe>
+            <img src='Anya_Visualizations/holt_linear_model.html' width=600 frameBorder=1>
             <p> Holt Linear Model </p>
         </div>
-        
+
         <div class="col-12 mb-2">
             <p> Facebook's Prophet Model </p>
             <iframe src='Anya_Visualizations/end_year_preds.html' width=600 height=500 frameBorder=1></iframe>
             <iframe src='Anya_Visualizations/end_year_comps.html' width=600 height=500 frameBorder=1></iframe>
         </div>
-        
+
     </div>
-    
+
 </body>
