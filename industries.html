@@ -75,7 +75,65 @@
         <p class="col-12">
             Knowing the proportions on day 1, and knowing the daily changes relative to the first day allows the following visualization.
         </p>
-        <iframe class='col-12' src='Tristan_Viz/changes.jpg' width=525 height=4000 frameBorder=1></iframe>
+        <iframe class='col-12' src='Tristan_Viz/decomp_plots_fix.jpg' width=525 height=4000 frameBorder=1></iframe>
+    </div>
+
+
+
+    <div class="row mt-3 m-auto container border border-primary rounded-5">
+        <h5 class="mt-2">Correlation analysis</h5>
+        <p class="col-12">
+            How well can you predict one industry with another using just linear regression?
+        </p>
+        <iframe class='col-12' src='Tristan_Viz/real_estate_and_services.png' width=525 height=700 frameBorder=1></iframe>
+        <p class="col-12">
+            These two are very strongly linearly correlated!
+        </p>
+        <iframe class='col-12' src='Tristan_Viz/energy_and_insurance.png' width=525 height=700 frameBorder=1></iframe>
+        <p class="col-12">
+            These are too!
+        </p>
+        <p class="col-12">
+            Let's visualize all of the industries' correlations to all other industries (and to the overall trend) using a heatmap.
+        </p>
+        <iframe class='col-12' src='Tristan_Viz/heatmap.png' width=525 height=800 frameBorder=1></iframe>
+        <p class="col-12">
+            Main points:
+        </p>
+        <p class="col-12">
+            All positive.
+        </p>
+        <p class="col-12">
+            Construction is very uncorrelated with other industries (Other and Communication are too).
+        </p>
+        <p class="col-12">
+            Hospitality, Other, and Services are the most correlated with Overall.
+        </p>
+        <p class="col-12">
+            
+        </p>
+        <p class="col-12">
+            Which industries are the most correlated with others?
+        </p>
+        <p class="col-12">
+            Metric used: sum of correlations to other industries.
+        </p>
+        <p class="col-12">
+            Services, Real Estate, Energy, Retail, Transportation, Wholesale, Mining, Insurance, Financial Services, Overall, Manufacturing, Healthcare, Hospitality, Entertainment, Communication, Other, Construction
+        </p>
+        <p class="col-12">
+            This reveals hidden economic connections.
+        </p>
+        <p class="col-12">
+            
+        </p>
+        <p class="col-12">
+            Just out of curiousity, let's visualize two uncorrelated industries (e.g., Construction and Entertainment).
+        </p>
+        <iframe class='col-12' src='Tristan_Viz/construction_and_entertainment.png' width=525 height=700 frameBorder=1></iframe>
+        <p class="col-12">
+            It looks like there is still some connection.
+        </p>
     </div>
 
 
