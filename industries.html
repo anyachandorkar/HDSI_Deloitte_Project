@@ -8,6 +8,9 @@
 <body class="container">
     <h3 class="mt-2">Industries</h3>
     <hr />
+
+    
+
     <div class="row mt-3 m-auto container border border-primary rounded-5">
         <h5 class="mt-2">Problem setup</h5>
         <p class="col-6">
@@ -25,5 +28,57 @@
             A numerical observation: they all start at 1 (blue pointers)
         </p>
     </div>
+
+
+
+    <div class="row mt-3 m-auto container border border-primary rounded-5">
+        <h5 class="mt-2">Motivation</h5>
+        <p class="col-6">
+            Functional decomposition
+        </p>
+        <iframe class='col-12' src='Tristan_Viz/decomposition_idea.jpg' width=525 height=715 frameBorder=1></iframe>
+        <p class="col-12">
+            Do we have enough information to do this?
+        </p>
+        <p class="col-12">
+            Currently we don't know their relative proportions.
+        </p>
+    </div>
+
+
+
+    <div class="row mt-3 m-auto container border border-primary rounded-5">
+        <h5 class="mt-2">Method</h5>
+        <p class="col-12">
+            Mathematically deducing proportions from a weighted average. Key observation: the weights are the proportions.
+        </p>
+        <iframe class='col-12' src='Tristan_Viz/method-fix.jpg' width=525 height=590 frameBorder=1></iframe>
+        <p class="col-12">
+            The actual problem is harder: there are 16 industries, every single one of which moves daily. We can use statistics to estimate the proportions.
+        </p>
+    </div>
+
+
+
+    <div class="row mt-3 m-auto container border border-primary rounded-5">
+        <h5 class="mt-2">Results</h5>
+        <p class="col-12">
+            Here are the proportions on March 1 2020.
+        </p>
+        <iframe class='col-12' src='Tristan_Viz/pie.png' width=525 height=590 frameBorder=1></iframe>
+    </div>
+
+
+
+    <div class="row mt-3 m-auto container border border-primary rounded-5">
+        <h5 class="mt-2">Coming full circle</h5>
+        <p class="col-12">
+            Knowing the proportions on day 1, and knowing the daily changes relative to the first day allows the following visualization.
+        </p>
+        <iframe class='col-12' src='Tristan_Viz/changes.jpg' width=525 height=4000 frameBorder=1></iframe>
+    </div>
+
+
+
     <div class="row mt-3 m-auto container border border-primary rounded-5">
 </body>
