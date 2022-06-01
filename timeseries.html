@@ -66,25 +66,31 @@
         <table border="3" align="center">
           <tr>
             <th>Model</th>
-            <th>Accuracy</th>
+            <th>MSE</th>
             <th>Description</th>
           </tr>
           <tr>
-            <td><img src="Anya_Visualizations/ses_model.html" alt="" height=300 width=300 /></td>
-            <td>SES</td>
-            <td>France</td>
+            <td><img src="Anya_Visualizations/ses_model.html" alt="" height=300 width=500 /></td>
+            <td>0.236</td>
+            <td>The Simple Exponential Smoothing Model isused for forecasting data with no clear trend or seasonality which is why 
+                you see a straight plateaued line with no direction. Our data does have a positive trend so this model would not have a good test MSE.</td>
    
           </tr>
           <tr>
-            <td height=100 width=100><img src="Anya_Visualizations/holt_linear_model.html" alt="" height=300 width=300 /></td>
-            <td>Holt Linear</td>
-            <td>United States</td>
+            <td height=100 width=100><img src="Anya_Visualizations/holt_linear_model.html" alt="" height=300 width=500 /></td>
+            <td>0.187</td>
+            <td>The Holt Linear Model is made for data with a trend but uses last estimated level plus some step size * last estimated trend value 
+                which is why the forecast is going to continue going downwards since the previous data was negatively sloping. The forecast however
+              should be showing a positive trend since the # jobs as the pandemic ends should generally increase. Therefore the test MSE would be high. </td>
          
           </tr>
            <tr>
-            <td height=100 width=100><img src="Anya_Visualizations/arima_model.html" alt="" height=300 width=300 /></td>
-            <td>ARIMA</td>
-            <td>United States</td>
+            <td height=100 width=100><img src="Anya_Visualizations/arima_model_2.html" alt="" height=300 width=500 /></td>
+            <td>0.943</td>
+            <td>The ARIMA model uses autocorrelations in the data rather than trends/seasonality of data. This model requires a 
+                stationarity assumption (constant variance) which in this case, the data does not have constant variance as it 
+                fluctuates in an increasing pattern. Therefore the train MSE is higher. 
+            </td>
          
           </tr>
         </table>
@@ -128,10 +134,10 @@
         </div>
 
         <div class="col-12 mb-2">
-            <p> Facebook's Prophet Model </p>
+            <p> <b>Facebook's Prophet Model </b></p>
             <br>
-            <iframe src='Anya_Visualizations/end_year_preds.html' width=800 height=700 frameBorder=1></iframe>
-            <iframe src='Anya_Visualizations/end_year_comps.html' width=800 height=700 frameBorder=1></iframe>
+            <iframe src='Anya_Visualizations/end_year_preds.html' width=800 height=500 frameBorder=1></iframe>
+            <iframe src='Anya_Visualizations/end_year_comps.html' width=800 height=500 frameBorder=1></iframe>
         </div>
 
     </div>
