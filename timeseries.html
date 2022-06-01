@@ -13,6 +13,7 @@
         <iframe
             src='https://public.tableau.com/views/regionaltimeseries/Regional?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link&:showVizHome=no'
             width=600 height=500 frameBorder=1></iframe>
+        <br>
         <p class="col-12 mb-2">
             In general you can see that all 4 regions had similar trends in job performance across the months from
             March 2020-September 2021 and no one region was going significantly better than the other. There is a
@@ -62,7 +63,7 @@
             train/test error proportion.
         </p>
         <br>
-        
+        <br>
         <table border="3" align="center">
           <tr>
             <th>Model</th>
@@ -101,7 +102,8 @@
           </tr>
         </table>
      
-
+        <br>
+        <br>
         <div class="col-12 mb-2">
             <p> <b>Facebook's Prophet Model </b></p>
             <br>
@@ -113,8 +115,15 @@
             </p>
             <br>
 
-            <iframe src='Anya_Visualizations/end_year_preds.html' width=800 height=600 frameBorder=1></iframe>
-            <iframe src='Anya_Visualizations/end_year_comps.html' width=800 height=500 frameBorder=1></iframe>
+            <iframe src='Anya_Visualizations/end_year_preds.html' width=100% frameBorder=1></iframe>
+            
+            <p> The individual component analysis of the forecast also shows a linear trend across the weeks but for ann individual
+                week we see that the forecast is predicting a decrease in the number of jobs from Monday-Wednesday and then plateauing out
+                for the weekend. We can assume this is the case because many job postings would release around the beginning of the week and
+                this is also when people apply the most so by the time the first half of the week is done, the job may already have a lot 
+                of applicants or could be taken up already. </p>
+            <br>
+            <iframe src='Anya_Visualizations/end_year_comps.html' width=100% frameBorder=1></iframe>
         </div>
         
     </div>
