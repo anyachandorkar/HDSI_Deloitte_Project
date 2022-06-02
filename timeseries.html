@@ -6,6 +6,10 @@
 </head>
 
 <body class="container">
+    <a href="geography.html">Geography Page</a>
+    <a href="industries.html">Industry Page</a>
+    <a href="roles.html">Roles Page</a>
+    <a href="timeseries.html">Time Series Page</a>
     <h3 class="mt-2">Time Series</h3>
     <hr />
     <div class="row mt-3 m-auto container border border-primary rounded-5">
@@ -65,67 +69,89 @@
         <br>
         <br>
         <table border="3" align="center">
-          <tr>
-            <th>Model</th>
-            <th>Description</th>
-          </tr>
-          <tr>
-            <td><img src="Anya_Visualizations/ses_model.html" alt="" height=300 width=500 /></td>
-            <td><p> <b> MSE: 0.298 </b> </p> 
-                <br>
-                <p>The Simple Exponential Smoothing Model isused for forecasting data with no clear trend or seasonality which is why 
-                you see a straight plateaued line with no direction. Our data does have a positive trend so this model would not have a good test MSE.
-                </p> </td>
-   
-          </tr>
-          <tr>
-            <td height=100 width=100><img src="Anya_Visualizations/holt_linear_model.html" alt="" height=300 width=500 /></td>
-            
-            <td><p> <b> MSE: 0.182 </b> </p>
-                <br>
-                <p>The Holt Linear Model is made for data with a trend but uses last estimated level plus some step size * last estimated trend value 
-                which is why the forecast is going to continue going downwards since the previous data was negatively sloping. The forecast however
-              should be showing a positive trend since the # jobs as the pandemic ends should generally increase. Therefore the test MSE would be high. 
-                </p> </td>
-         
-          </tr>
-           <tr>
-            <td height=100 width=100><img src="Anya_Visualizations/arima_model_2.html" alt="" height=300 width=500 /></td>
-     
-               <td><p> <b> MSE: 0.943. </b> </p>
-                   <br>
-                   <p> The ARIMA model uses autocorrelations in the data rather than trends/seasonality of data. This model requires a 
-                stationarity assumption (constant variance) which in this case, the data does not have constant variance as it 
-                       fluctuates in an increasing pattern. Therefore the train MSE is higher. </p>
-            </td>
-         
-          </tr>
+            <tr>
+                <th>Model</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td><img src="Anya_Visualizations/ses_model.html" alt="" height=300 width=500 /></td>
+                <td>
+                    <p> <b> MSE: 0.298 </b> </p>
+                    <br>
+                    <p>The Simple Exponential Smoothing Model isused for forecasting data with no clear trend or
+                        seasonality which is why
+                        you see a straight plateaued line with no direction. Our data does have a positive trend so this
+                        model would not have a good test MSE.
+                    </p>
+                </td>
+
+            </tr>
+            <tr>
+                <td height=100 width=100><img src="Anya_Visualizations/holt_linear_model.html" alt="" height=300
+                        width=500 /></td>
+
+                <td>
+                    <p> <b> MSE: 0.182 </b> </p>
+                    <br>
+                    <p>The Holt Linear Model is made for data with a trend but uses last estimated level plus some step
+                        size * last estimated trend value
+                        which is why the forecast is going to continue going downwards since the previous data was
+                        negatively sloping. The forecast however
+                        should be showing a positive trend since the # jobs as the pandemic ends should generally
+                        increase. Therefore the test MSE would be high.
+                    </p>
+                </td>
+
+            </tr>
+            <tr>
+                <td height=100 width=100><img src="Anya_Visualizations/arima_model_2.html" alt="" height=300
+                        width=500 /></td>
+
+                <td>
+                    <p> <b> MSE: 0.943. </b> </p>
+                    <br>
+                    <p> The ARIMA model uses autocorrelations in the data rather than trends/seasonality of data. This
+                        model requires a
+                        stationarity assumption (constant variance) which in this case, the data does not have constant
+                        variance as it
+                        fluctuates in an increasing pattern. Therefore the train MSE is higher. </p>
+                </td>
+
+            </tr>
         </table>
-     
+
         <br>
         <br>
         <div class="col-12 mb-2">
             <p> <b>Facebook's Prophet Model </b></p>
             <br>
-            <p> Facebook's prophet model is a univariate additive time series model that takes into account trends and seasonality. 
-                Since there is no seasonality but a positive trend, we see a positive linear forecast. This model results is a good train MSE
-                and would also produce a better test MSE compared to the other models because it accounts for the lack of seasonality in the 
-                data and a positive trend over time. In order to produce a better forecast and be able to account for the gaussian noise we 
-                see in the data, we would need a lot more than 1.5 years worth of data. 
+            <p> Facebook's prophet model is a univariate additive time series model that takes into account trends and
+                seasonality.
+                Since there is no seasonality but a positive trend, we see a positive linear forecast. This model
+                results is a good train MSE
+                and would also produce a better test MSE compared to the other models because it accounts for the lack
+                of seasonality in the
+                data and a positive trend over time. In order to produce a better forecast and be able to account for
+                the gaussian noise we
+                see in the data, we would need a lot more than 1.5 years worth of data.
             </p>
             <br>
 
-            <iframe src='Anya_Visualizations/end_year_preds.html' height = 700, width=700 frameBorder=1></iframe>
-            
-            <p> The individual component analysis of the forecast also shows a linear trend across the weeks but for ann individual
-                week we see that the forecast is predicting a decrease in the number of jobs from Monday-Wednesday and then plateauing out
-                for the weekend. We can assume this is the case because many job postings would release around the beginning of the week and
-                this is also when people apply the most so by the time the first half of the week is done, the job may already have a lot 
+            <iframe src='Anya_Visualizations/end_year_preds.html' height=700, width=700 frameBorder=1></iframe>
+
+            <p> The individual component analysis of the forecast also shows a linear trend across the weeks but for ann
+                individual
+                week we see that the forecast is predicting a decrease in the number of jobs from Monday-Wednesday and
+                then plateauing out
+                for the weekend. We can assume this is the case because many job postings would release around the
+                beginning of the week and
+                this is also when people apply the most so by the time the first half of the week is done, the job may
+                already have a lot
                 of applicants or could be taken up already. </p>
             <br>
-            <iframe src='Anya_Visualizations/end_year_comps.html' height = 700, width=700 frameBorder=1></iframe>
+            <iframe src='Anya_Visualizations/end_year_comps.html' height=700, width=700 frameBorder=1></iframe>
         </div>
-        
+
     </div>
 
 </body>
